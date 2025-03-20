@@ -1,12 +1,11 @@
 "웹 프로그래밍응용" 시간에 배웠던 내용들을 복습해서 기록할 것이다.
 
-#1. 자바 연습
+# 1. 자바 연습
 이중 for문을 이용해서 별 찍기
 
 (1) / 모양 코드
 <pre>
 <code>
-  
 package chap_01;
 
 public class _03_Variables {
@@ -29,7 +28,6 @@ public class _03_Variables {
 
     }
 }
-
 </code>
 </pre>
 
