@@ -76,6 +76,31 @@ public class _03_Variables {
 
 ![image](https://github.com/user-attachments/assets/5fe7262f-c3bd-4554-8b93-864d0ed6ee52)
 
+(3) 이차원 배열 코드
+<pre>
+<code>
+public class Main{
+    public static void main(String[] args) {
+
+        String[][] coffees = new String[][] {
+                {"coffee", "coffee2", "coffee3"},
+                {"coffee", "coffee4", "coffee5"},
+                {"coffee", "coffee6", "coffee7"}
+        };
+
+
+        System.out.println(coffees[1][1]);
+
+
+    }
+}
+    </code>
+</pre>
+
+
+
+
+
 
 
 
