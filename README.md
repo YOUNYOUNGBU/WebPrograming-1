@@ -3,7 +3,7 @@
 # 1. 자바 연습
 이중 for문을 이용해서 별 찍기
 
-(1) / 모양 코드
+## (1) / 모양 코드
 <pre>
 <code>
 package chap_01;
@@ -31,11 +31,11 @@ public class _03_Variables {
 </code>
 </pre>
 
-결과 화면
+## 결과 화면
 
 ![image](https://github.com/user-attachments/assets/d5e3c725-27fc-4e9d-8edf-62a3ca69ceac)
 
-(2) 다이아몬드 모양 코드
+## (2) 다이아몬드 모양 코드
 <pre>
 <code>
 package chap_01;
@@ -72,11 +72,11 @@ public class _03_Variables {
     </code>
 </pre>
 
-결과 화면
+## 결과 화면
 
 ![image](https://github.com/user-attachments/assets/5fe7262f-c3bd-4554-8b93-864d0ed6ee52)
 
-(3) 이차원 배열 코드
+## (3) 이차원 배열 코드
 <pre>
 <code>
 public class Main{
@@ -97,7 +97,7 @@ public class Main{
     </code>
 </pre>
 
-(4) 이차원 배열 순회 코드
+## (4) 이차원 배열 순회 코드
 -1-
 <pre>
 <code>
@@ -121,7 +121,7 @@ public class Main{
  </code>
 </pre>
 
-결과 화면
+## 결과 화면
 
 ![image](https://github.com/user-attachments/assets/e3767b67-c896-4b64-a7b3-a79229ee9b5b)
 
@@ -148,7 +148,7 @@ public class Main{
  </code>
 </pre>
 
-결과 화면
+## 결과 화면
 
 ![image](https://github.com/user-attachments/assets/c056ba5b-c0f2-4bd5-bceb-9d841ca3e449)
 
@@ -179,11 +179,11 @@ public class Main{
  </code>
 </pre>
 
-결과 화면
+## 결과 화면
 
 ![image](https://github.com/user-attachments/assets/982b4b25-4021-4403-83f3-9e7d836d4e9e)
 
-(5) 숫자 야구 게임 
+## (5) 숫자 야구 게임 
 옛날에 자바 프로그래밍 시간때 중간고사 대체과제로 내주신 숫자 야구 게임인데 예전에는 엄청 어렵다고 생각했는데 지금은 시간은 꽤 걸리지만 안보고 할 수 있을 정도까지 왔다.
 아직 코드가 잘 정리되지 않는 것 같긴 한데 그래도 한게 어디야 후후
 
@@ -292,8 +292,39 @@ public class Main {
 </code>
 </pre>
 
-결과 화면
+## 결과 화면
 
 ![image](https://github.com/user-attachments/assets/6aeb2b80-ea8d-423f-95a8-fcc734029f1c)
+
+## (6) 팩토리얼
+<pre>
+    <code>
+        import java.util.Scanner;
+
+public class Main {
+
+    public static int Pact(int num){
+        int result = 1;
+
+        for(int i = 1; i <= num; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("숫자를 입력하세요: ");
+        int pact = Pact(scan.nextInt());
+
+        System.out.println(pact);
+    }
+}
+    </code>
+</pre>
+
+## 결과 화면
+![image](https://github.com/user-attachments/assets/d34a4f29-df4c-47c6-a621-5b76302bc0b4)
 
 
