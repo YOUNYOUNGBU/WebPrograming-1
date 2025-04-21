@@ -1,0 +1,61 @@
+17:40 ~ 20:40분 까지 공부한 내용
+1. 자바 역사 
+  java EE는 8까지 지원 jakarta EE는 8부터 지원
+    
+2. Spring Framework 특징
+- 일반 자바 객체를 위한 POJO 지원
+- 객체간 결합도를 줄이는 의존성 주입 지원 
+- 공통 모듈의 재사용을 위한 AOP(관점 지향 프로그래밍) 지원
+- 일관성 있는 모듈의 트랜잭션 지원
+- 전자 정부 표준 프레임 워크의 기반 기술
+  
+3. 스프링 모듈
+- Spring Framework: 의존성 주입 프레임 워크 ex) Spring MVC
+- Spring Webflux: 완전한 비차단 지원
+- Spring Boot: 독립실행형 애플리케이션
+- Spirng Data: 데이터베이스
+- Spring Security: 강력한 보안
+- Spring Integration: 메시징을 이용한 내/외부 애플리케이션 통합
+- Spring Batch: 배치 애플리케이션
+- Spring Cloud: 클라우드, 빠르게 빌드
+- Spring Native: 부트 프로젝트를 네이티브 파일로 어쩌구
+
+4. Spring MVC의 기본 구성 요소
+- 디스패처 서블릿: 웹브라우저에서 요청 받음
+- 핸들러 매핑: 어떤 컨트롤러 에서 처리할지를 결정
+- 핸들러 어댑터: 핸드러 매핑에서 결정된 컨트롤러 호출
+- 컨트롤러: 결과를 반환, 뷰로 전달
+- 모델 & 뷰: ===========================================================================================
+- 뷰 리졸버: 사용자에게 보여질 뷰 결정
+- 뷰: 결과 화면을 생성
+
+5. 자바 클래스의 Bean 객체 설정
+- Spring MVC에서 사용할 Bean객체를 XML에등록하지 않고 설정된 패키지에 하위 경로에 모든 클래스를 검색하여 자동 등록
+<beans:bean class = "com.springmvc.controller.Homecontroller" />
+
+6. 정적 리소스 설정
+이미지, js, css를 와 같은 정적 리소스를 웹브라우저에서 효율적으로 전달하도록 최적화된 캐시 헤더와 함께 제공하기 위한 핸들러를 구성
+<resouces mapping = "/resources/**/" location = "/resources/" />
+
+7. 뷰 매핑 설정
+브라우저에 요청 결과를 전달할 view 관련 설정
+- prefix: 접두사, /WEB-INF/views/
+- suffix: 접미사, .jsp
+
+접두사 + 뷰 이름 + 접미사 = /WEB-INF/views/home.jsp
+
+8. 계층적 구조
+- 웹 애플리케이션을 조금 더 효율적으로 개발하기 위해, 쉬운 유지 보수를 위해 시스템 구조를 계층적으로 나뉘어 개발
+- 도메인 객체: 정보를 저장
+- 퍼시스턴스 계층: 데이터베이스나 파일에 접근하여 데이터를 처리
+- 서비스 계층: 데이터 처리를 위해 퍼시스턴스 계층 호출
+- 프레젠테이션 계층: 사용자로부터 데이터를 입력받거나 출력
+
+9. 계층적 구조 구현 과정
+도메인 객체 -> 퍼시스턴스 계층-> 서비스 계층-> 프레젠테이션 -> 계층 순서로 구현
+도메인 객체: book.java
+퍼시스턴스 계층: BookRepositoryImpl.java, BookRepository.java
+서비스 계층: BookServiceImpl.java, BookService.java
+프레젠테이션 계층: 컨트롤러: BookController.java, 뷰: books.jsp
+
+  
