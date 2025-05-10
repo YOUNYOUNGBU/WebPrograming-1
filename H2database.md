@@ -1,4 +1,4 @@
-(1) Log4j
+ㅇ(1) Log4j
 • 산업용 Java 로깅 프레임워크
 • API, 구현 및 다양한 사용 사례에 대한 배포를 지원하는 요소로 구성됨
 • Apache Software Foundation에서 관리하는 프로젝트
